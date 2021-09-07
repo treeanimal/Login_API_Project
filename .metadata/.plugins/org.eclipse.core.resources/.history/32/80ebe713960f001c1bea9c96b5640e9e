@@ -1,0 +1,8 @@
+package com.devfun.dao;
+
+import java.util.List;
+
+public interface MovieDAO {
+	
+	public List<MovieVO> selectMovie() throws Exception;
+}
