@@ -21,6 +21,10 @@
 + 스프링 부트 환경 검토
   + 스프링 부트 마이그레이션에 따른 영항도 검토
 
+#### 진행 결과
+<image src="https://user-images.githubusercontent.com/56327398/133193078-84ea9d70-8c28-4afb-bee8-d809a35d5a85.png"  width="500px"/>
+
+
 ---
 ## 일시: 2021/09/08 - 2021/09/14 - 2주차
 
@@ -32,12 +36,29 @@
         + HTTP 통신 관련한 학습 (완료)
         + API가이드 문서 작성(완료)
 
+2. SW활용 현황 API
+    + 월별 접속자 수
+    + 일자별 접속자 수
+    + 평균 하루 로그인 수
+    + 휴일을 제외한 로그인 수
+    + 부서별 월별 로그인 수
+
+
+
+#### 진행결과
+
+|||
+|---|----|
+|![image](https://user-images.githubusercontent.com/56327398/133193526-b8b70c3f-2351-43ba-b7e4-ff6bd2984ae0.png)|![image](https://user-images.githubusercontent.com/56327398/133193575-70990a6e-b871-402b-8c07-cb3d1d25471f.png)
+|
+
 #### 1) HTTP 통신이란?
 - 'HyperText Transfer Protocol'의 약자로 HTML 파일을 전송하는 프로토콜이라는 의미.
 - 하지만 현재는 JSON, Image 파일 등 다양한 형태로도 전송이 가능하다.
 
 #### 2) HTTP 통신의 통신 방식
 ![image](https://user-images.githubusercontent.com/56327398/133175585-31d4d425-6be7-414f-8089-9000af829946.png)<br>
+
 <출처: https://velog.io/@sparklingwater/HTTP >
 
 - HTTP 통신은 클라리언트에서 서버로 요청(request), 서버에서 응답 결과(response)를 보낸다. 
