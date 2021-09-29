@@ -1,8 +1,10 @@
 package com.mycompany.comento.test;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,6 +23,12 @@ public class SettingTest {
 	@ResponseBody
 	@RequestMapping("/sqlyearStatistic")
 	public Map<String, Object> sqltest(String year) throws Exception{
+		HashMap<String, Object> result = service.yearloginNum(year);
+		
+		for(Entry<String, Object> entrySet : result.entrySet()) {
+			System.out.println(entrySet.getKey() + " : " + entrySet.getValue());
+		}
+		
 		return service.yearloginNum(year);
 	}
 	

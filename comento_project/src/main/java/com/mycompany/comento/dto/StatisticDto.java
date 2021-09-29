@@ -6,6 +6,8 @@ public class StatisticDto {
 	private String requestCode;
 	private String userID;
 	private int createDate;
+	
+	
 	public int getRequestID() {
 		return requestID;
 	}

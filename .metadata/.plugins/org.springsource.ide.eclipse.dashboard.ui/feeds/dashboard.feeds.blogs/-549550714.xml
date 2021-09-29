@@ -5,7 +5,63 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2021-09-23T23:00:00Z</updated>
+  <updated>2021-09-29T07:00:00Z</updated>
+  <entry>
+    <title>Spring Tips: Bootiful Edge Services</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/09/29/spring-tips-bootiful-edge-services" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-09-25:4557</id>
+    <updated>2021-09-29T07:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, Josh Long looks at how to build bootiful Edge Services with Spring Cloud Gateway, Spring GraphQL, and Reactive Programming&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/nrTw4w1xJck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring - September 28th, 2021</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/09/28/this-week-in-spring-september-28th-2021" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-09-28:4559</id>
+    <updated>2021-09-28T17:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! This week &lt;a href="https://twitter.com/mraible/status/1442698739563446276"&gt;I&amp;rsquo;m with&lt;/a&gt; my buddy &lt;a href="https://twitter.com/mraible"&gt;Matt Raible&lt;/a&gt; preparing for what I&amp;rsquo;m hoping will be an awesome San Francisco JUG joint appearance on Wednesday this week! &lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve got to get back to that! But I did want to get through this roundup because it&amp;rsquo;s enormous! So, without further ado:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/09/27/spring-initializr-0-11-0-available-now"&gt;Spring Initializr 0.11.0 available now&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;In last week&amp;rsquo;s &lt;a href="https://spring.io/blog/2021/09/23/a-bootiful-podcast-spring-web-legend-rossen-stoyanchev-on-rsocket-graphql-and-more"&gt;&lt;em&gt;A Bootiful Podcast&lt;/em&gt;, I talked to Spring web legend Rossen Stoyanchev on RSocket, GraphQL and more&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://blog.frankel.ch/reassessing-testng-junit/"&gt;Reassessing TestNG vs. Junit&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/09/22/spring-boot-2-4-11-available-now"&gt;Spring Boot 2.4.11 available now&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/09/23/spring-boot-2-5-5-available-now"&gt;Spring Boot 2.5.5 available now&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/09/23/spring-boot-2-6-0-m3-available-now"&gt;Spring Boot 2.6.0-M3 available now&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/09/22/spring-data-jdbc-how-do-i-make-bidirectional-relationships"&gt;Spring Data JDBC - How do I make Bidirectional Relationships?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://developer.okta.com/blog/2021/09/16/spring-native-okta-starter"&gt;Spring Native in Action with the Okta Spring Boot Starter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.wimdeblauwe.com/blog/2021/09/20/todomvc-with-spring-boot-and-thymeleaf-part-1/"&gt;TodoMVC with Spring Boot and Thymeleaf (Part 1) - Wim Deblauwe&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.wimdeblauwe.com/blog/2021/09/23/todomvc-with-spring-boot-and-thymeleaf-part-2/"&gt;TodoMVC with Spring Boot and Thymeleaf (Part 2) - Wim Deblauwe&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.wimdeblauwe.com/blog/2021/09/27/todomvc-with-spring-boot-and-thymeleaf-part-3/"&gt;TodoMVC with Spring Boot and Thymeleaf (Part 3) - Wim Deblauwe&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Neat article on InfoQ.com: &lt;a href="https://www.infoq.com/news/2021/09/spring-6-spring-boot-3-overhaul/"&gt;VMware Overhauls Spring 6 &amp;amp; Spring Boot 3 for Another Decade&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/sjohnr/status/1441390712956735489?s=12"&gt;Check this resource on the Spring Security Authorization Server:&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Initializr 0.11.0 available now</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/09/27/spring-initializr-0-11-0-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>St?phane Nicoll</name>
+    </author>
+    <id>tag:spring.io,2021-09-27:4558</id>
+    <updated>2021-09-27T16:38:08Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I¡¯m happy to announce that Spring Initializr 0.11.0 has been released and is now available from Maven Central.&lt;/p&gt;
+&lt;p&gt;This release includes &lt;a href="https://github.com/spring-io/initializr/releases/tag/v0.11.0"&gt;15 fixes, improvements and dependency upgrades&lt;/a&gt;.&lt;br/&gt;Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;
+&lt;p&gt;For full &lt;a href="https://github.com/spring-io/initializr/wiki/Spring-Initializr-0.11-Release-Notes#upgrading-from-initializr-010"&gt;upgrade instructions&lt;/a&gt; and &lt;a href="https://github.com/spring-io/initializr/wiki/Spring-Initializr-0.11-Release-Notes#new-and-noteworthy"&gt;new and noteworthy&lt;/a&gt; features please see the &lt;a href="https://github.com/spring-io/initializr/wiki/Spring-Initializr-0.11-Release-Notes"&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-io/initializr"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-io/initializr/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/initializr/docs/0.11.0/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-initializr"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-io/initializr"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>A Bootiful Podcast: Spring web legend Rossen Stoyanchev on RSocket, GraphQL and more</title>
     <link rel="alternate" href="https://spring.io/blog/2021/09/23/a-bootiful-podcast-spring-web-legend-rossen-stoyanchev-on-rsocket-graphql-and-more" />
@@ -681,11 +737,11 @@ Let me know if you would like me to cover specific topics.&lt;/p&gt;
       <name>St?phane Nicoll</name>
     </author>
     <id>tag:spring.io,2021-09-15:4545</id>
-    <updated>2021-09-15T08:44:10Z</updated>
+    <updated>2021-09-15T08:44:00Z</updated>
     <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Framework &lt;code&gt;5.3.10&lt;/code&gt; and &lt;code&gt;5.2.17&lt;/code&gt; are available now.&lt;/p&gt;
 &lt;p&gt;Spring Framework &lt;code&gt;5.3.10&lt;/code&gt; includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.3.10"&gt;45 fixes and improvements&lt;/a&gt;. Spring Framework &lt;code&gt;5.2.17&lt;/code&gt; includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.2.17.RELEASE"&gt;13 selected fixes and improvements&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Stay tuned for follow-up Spring Boot releases next week.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/5.3.10/spring-framework-reference"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/5.3.10/reference/html/"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
   <entry>
@@ -956,379 +1012,6 @@ StepVerifier.create(result)
     <updated>2021-09-09T19:00:00Z</updated>
     <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, &lt;a href="https://twitter.com/starbuman"&gt;Josh Long (@starbuman)&lt;/a&gt; talks about pumpkin spice lattes, COVID, labor day, and then gets to talk to Spring Security engineer &lt;a href="https://twitter.com/jzheaux"&gt;Josh Cummings (@jzheaux)&lt;/a&gt;&lt;/p&gt;
 &lt;iframe title="Spring Security engineer Josh Cummings" allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=kwggi-10d74ff-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;btn-skin=7"&gt;&lt;/iframe&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Data JDBC - How to use custom ID generation</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/09/09/spring-data-jdbc-how-to-use-custom-id-generation" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Jens Schauder</name>
-    </author>
-    <id>tag:spring.io,2021-09-06:4533</id>
-    <updated>2021-09-09T18:00:00Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;This is the first article of a series about how to tackle various challenges you might encounter when using Spring Data JDBC.
-The series consists of&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="olist arabic"&gt;
-&lt;ol class="arabic"&gt;
-&lt;li&gt;
-&lt;p&gt;Spring Data JDBC - How to use custom ID generation. (this article).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://spring.io/blog/2021/09/22/spring-data-jdbc-how-do-i-make-bidirectional-relationships"&gt;Spring Data JDBC - How do I make bidirectional relationships?&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;If you are new to Spring Data JDBC, you should start by reading its &lt;a href="https://spring.io/blog/2018/09/17/introducing-spring-data-jdbc"&gt;introduction&lt;/a&gt; and &lt;a href="https://spring.io/blog/2018/09/24/spring-data-jdbc-references-and-aggregates"&gt;this article, which explains the relevance of aggregates in the context of Spring Data JDBC&lt;/a&gt;. Trust me, it is important.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;This article is based on part of a &lt;a href="https://springone.io/2021/sessions/post-event/spring-data-jdbc-beyond-the-obvious"&gt;talk I did at Spring One 2021&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Now we can get started with IDs - especially about what your options are when you want to control the ID of an entity and do not want to leave it to the database.
-But let us first reiterate Spring Data JDBC&amp;#8217;s default strategy for this.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;By default, Spring Data JDBC assumes that IDs get generated by some kind of &lt;code&gt;SERIAL&lt;/code&gt;, &lt;code&gt;IDENTITY&lt;/code&gt;, or &lt;code&gt;AUTOINCREMENT&lt;/code&gt; column.
-It basically checks whether the ID of an aggregate root is &lt;code&gt;null&lt;/code&gt; or &lt;code&gt;0&lt;/code&gt; for primitive number types.
-If it is, the aggregate is assumed to be new and an insert is performed for the aggregate root.
-The database generates an ID, and the ID is set in the aggregate root by Spring Data JDBC.
-If the ID is not &lt;code&gt;null&lt;/code&gt;, the aggregate is assumed to be an existing one and an update is performed for the aggregate root.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Consider a simple aggregate consisting of a single simple class:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="java"&gt;class Minion {
-	@Id
-	Long id;
-	String name;
-
-	Minion(String name) {
-		this.name = name;
-	}
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Further consider a default &lt;code&gt;CrudRepository&lt;/code&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="java"&gt;interface MinionRepository extends CrudRepository&amp;lt;Minion, Long&amp;gt; {
-
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The repository gets autowired into your code with a line like the following:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="java"&gt;	@Autowired
-	MinionRepository minions;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The following works just fine:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="java"&gt;Minion before = new Minion("Bob");
-assertThat(before.id).isNull();
-
-Minion after = minions.save(before);
-
-assertThat(after.id).isNotNull();&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;But this next bit does not work:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="java"&gt;Minion before = new Minion("Stuart");
-before.id = 42L;
-
-minions.save(before);&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;As described earlier, Spring Data JDBC tries to perform an update, because the ID is already set.
-However, because the aggregate is actually new, the update statement affects zero rows and Spring Data JDBC throws an exception.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;There are a few ways around this.
-I found four different approaches for this, and I listed them with what I consider easiest first, so you can stop reading once you find a solution that works for you.
-You can come back later to read about the other options and improve your Spring Data skills.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="version"&gt;&lt;a class="anchor" href="#version"&gt;&lt;/a&gt;Version&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Add a version attribute to your aggregate attribute.
-By "version attribute" I mean an attribute annotated with &lt;code&gt;@Version&lt;/code&gt;.
-The primary purpose of such an attribute is to enable optimistic locking.
-However, as a side effect, the version attribute also gets used by Spring Data JDBC to determine whether the aggregate root is new or not.
-As long as the version is &lt;code&gt;null&lt;/code&gt; or &lt;code&gt;0&lt;/code&gt; for primitive types, the aggregate is considered to be new, even when the &lt;code&gt;id&lt;/code&gt; is set.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;With this approach, you have to change the entity and (of course) the schema but nothing else.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Also, for many applications optimistic locking is a nice thing to have in the first place.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;We turn the original &lt;code&gt;Minion&lt;/code&gt; into a &lt;code&gt;VersionedMinion&lt;/code&gt;:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="java"&gt;class VersionedMinion {
-
-	@Id Long id;
-	String name;
-	@Version Integer version;
-
-	VersionedMinion(long id, String name) {
-
-		this.id = id;
-		this.name = name;
-	}
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The repository and autowiring looks basically the same as the original example.
-With this change, the following construct works:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="java"&gt;VersionedMinion before = new VersionedMinion(23L, "Bob");
-
-assertThat(before.id).isNotNull();
-
-versionedMinions.save(before);
-
-VersionedMinion reloaded = versionedMinions.findById(before.id).get();
-assertThat(reloaded.name).isEqualTo("Bob");&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="template"&gt;&lt;a class="anchor" href="#template"&gt;&lt;/a&gt;Template&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Another way to have your will with IDs is to make the insert yourself.
-You can do so by injecting a &lt;code&gt;JdbcAggregateTemplate&lt;/code&gt; and calling &lt;code&gt;JdbcAggregateTemplate.insert(T)&lt;/code&gt;.
-The &lt;code&gt;JdbcAggregateTemplate&lt;/code&gt; is an abstraction layer below the repository, so you use the same code that a repository would use for an insert, but you decide when an insert is used:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="java"&gt;Minion before = new Minion("Stuart");
-before.id = 42L;
-
-template.insert(before);
-
-Minion reloaded = minions.findById(42L).get();
-assertThat(reloaded.name).isEqualTo("Stuart");&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Note that we do not use a repository but a template, which got injected with the following:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="java"&gt;@Autowired
-JdbcAggregateTemplate template;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="eventlistener"&gt;&lt;a class="anchor" href="#eventlistener"&gt;&lt;/a&gt;EventListener&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The template approach is great for situations where you already know the ID - for example, when you import data from another system and you want to reuse the ID of that system.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;In cases where you do not know the ID and do not want to have anything ID-elated in your business code, using a callback might be the better option.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;A callback is a bean that gets called during certain life cycle events.
-The right callback for our purpose is the &lt;code&gt;BeforeSaveCallback&lt;/code&gt;.
-It returns the potentially modified aggregate root, so it works for immutable entity classes as well.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;In the callback, we determine whether the aggregate root in question needs a fresh ID. If so, we generate it by using an algorithm of our choice.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;We use another variation of the &lt;code&gt;Minion&lt;/code&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="java"&gt;class StringIdMinion {
-	@Id
-	String id;
-	String name;
-
-	StringIdMinion(String name) {
-		this.name = name;
-	}
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Repository and injection point still look analogous to the original example.
-However, we register the callback in the configuration:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="java"&gt;@Bean
-BeforeSaveCallback&amp;lt;StringIdMinion&amp;gt; beforeSaveCallback() {
-
-	return (minion, mutableAggregateChange) -&amp;gt; {
-		if (minion.id == null) {
-			minion.id = UUID.randomUUID().toString();
-		}
-		return minion;
-	};
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The code for saving the entity now looks just as if the &lt;code&gt;id&lt;/code&gt; had been generated by the database:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="java"&gt;StringIdMinion before = new StringIdMinion("Kevin");
-
-stringions.save(before);
-
-assertThat(before.id).isNotNull();
-
-StringIdMinion reloaded = stringions.findById(before.id).get();
-assertThat(reloaded.name).isEqualTo("Kevin");&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="persistable"&gt;&lt;a class="anchor" href="#persistable"&gt;&lt;/a&gt;Persistable&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The final option is to let the aggregate root control whether an update or insert should be made.
-You can do that by implementing the &lt;code&gt;Persistable&lt;/code&gt; interface (especially the &lt;code&gt;isNew&lt;/code&gt; method).
-The easiest way is to return &lt;code&gt;true&lt;/code&gt; all the time, thereby forcing an insert all the time.
-Of course, this does not work when you want to use the aggregate root for updates as well.
-In that case, you need to come up with a more flexible strategy.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;We need to tweak our &lt;code&gt;Minion&lt;/code&gt; again:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="java"&gt;class PersistableMinion implements Persistable&amp;lt;Long&amp;gt; {
-	@Id Long id;
-	String name;
-
-	PersistableMinion(Long id, String name) {
-		this.id = id;
-		this.name = name;
-	}
-
-	@Override
-	public Long getId() {
-		return id;
-	}
-
-	@Override
-	public boolean isNew() {
-		// this implementation is most certainly not suitable for production use
-		return true;
-	}
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The code for saving a &lt;code&gt;PersistableMinion&lt;/code&gt; looks just the same:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="java"&gt;PersistableMinion before = new PersistableMinion(23L, "Dave");
-
-persistableMinions.save(before);
-
-PersistableMinion reloaded = persistableMinions.findById(before.id).get();
-assertThat(reloaded.name).isEqualTo("Dave");&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="conclusion"&gt;&lt;a class="anchor" href="#conclusion"&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Spring Data JDBC offers a plethora of options for how you can control the IDs of your aggregates.
-While I used trivial logic for the examples, nothing keeps you from implementing whatever logic comes to your mind, since they all boil down to pretty basic Java code.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The &lt;a href="https://github.com/spring-projects/spring-data-examples/tree/main/jdbc/howto/idgeneration"&gt;complete example code is available in the Spring Data Example repository&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;There will be more articles like this.
-Let me know if you would like me to cover specific topics.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - September 7th, 2021</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/09/07/this-week-in-spring-september-7th-2021" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2021-09-07:4534</id>
-    <updated>2021-09-07T10:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! I am still reeling from the craziness of last week&amp;rsquo;s SpringOne event! That doesn&amp;rsquo;t mean that the world&amp;rsquo;s stood still in the interim though! Quite the contrary! There&amp;rsquo;s a ton of things to get to this week so without further ado let&amp;rsquo;s go! &lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;In last week&amp;rsquo;s, &lt;a href="https://spring.io/blog/2021/09/02/a-bootiful-podcast-springone-2021-and-jackson-and-woodstox-creator-tatu-saloranta"&gt;A Bootiful Podcast, I briefly recap some of the excitement from SpringOne 2021 and then talked Jackson and Woodstox creator Tatu Saloranta&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;I loved Spring Framework lead Juergen Hoeller&amp;rsquo;s post &lt;a href="https://spring.io/blog/2021/09/02/a-java-17-and-jakarta-ee-9-baseline-for-spring-framework-6"&gt;&lt;em&gt;A Java 17 and Jakarta EE 9 baseline for Spring Framework 6&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://blog.yugabyte.com/announcing-spring-data-yugabytedb/"&gt;Announcing Spring Data YugabyteDB - The Distributed SQL Blog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://tanzu.vmware.com/content/blog/announcing-vmware-tanzu-application-platform"&gt;Announcing VMware Tanzu Application Platform: A Better Developer Experience on any Kubernetes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/dormaindrewitz/status/1433932107793924100?s=12"&gt;Check out the SpringOne 2021 keynotes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Speaking of SpringOne, I loved this silly moment in one of the talks from Jetbrains&amp;rsquo; &lt;a href="https://twitter.com/hhariri/status/1433687159282835457?s=12"&gt;Hadi Hariri: Spring is not Spring without @starbuxman&lt;/a&gt; - LOL!&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/jonashackt/status/1435201548045463557?s=12"&gt;Jonas Hecht&amp;rsquo;s article, &lt;em&gt;Goodbye Dockerfile&lt;/em&gt;, looking at Cloud Native Buildpacks and Spring Boot, is featured in the summer edition of iXmagazin, a German language developer journal&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://github.com/oracle/oracle-r2dbc/releases/tag/0.3.0"&gt;Kuassi Mensah has announced the latest official release of the R2DBC driver for Oracle database&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/maciejwalkowiak/status/1434066635133001729?s=12"&gt;Maciej Walkowiak lists some good choices for people who want options for feature toggles&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/09/01/monitor-spring-boot-applications-end-to-end-using-dynatrace-in-azure-spring-cloud"&gt;Monitor Spring Boot applications end-to-end using Dynatrace in Azure Spring Cloud!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/piotr_minkowski/status/1432970631893733376?s=12"&gt;Piotr Mi?kowski points the community to this interesting Spring Boot integration for Testcontainers that provides auto-configurations for Spring Boot-based integration tests&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.sourcecodeexamples.net/2020/10/spring-boot-spring-security-jwt-react-polling-app.html?spref=tw&amp;m=1"&gt;Spring Boot, Spring Security, JWT, React, and Ant Design - Polling App | GitHub&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/09/01/spring-graphql-1-0-0-m2-available-now"&gt;Spring GraphQL 1.0.0-M2 available now&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://tanzu.vmware.com/content/blog/springone-2021-day-2-recap-and-highlights"&gt;SpringOne 2021: Day 2 Recap and Breakout Session Highlights&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://tanzu.vmware.com/content/ebooks/the-state-of-spring-2021"&gt;The State of Spring 2021&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://tanzu.vmware.com/content/blog/vmware-tanzu-enterprise-support-spring-boot-native-applications-bellsoft-liberica-nik"&gt;VMware Tanzu Adds Enterprise Support for Spring Boot Native Applications Compiled with BellSoft Liberica NIK&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.infoworld.com/article/3631384/vmware-s-new-tanzu-platform-aims-to-unify-kubernetes-development.amp.html?__twitter_impression=true"&gt;VMware¡¯s new Tanzu platform aims to unify Kubernetes development&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>A Bootiful Podcast: SpringOne 2021 and Jackson and Woodstox creator Tatu Saloranta</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/09/02/a-bootiful-podcast-springone-2021-and-jackson-and-woodstox-creator-tatu-saloranta" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2021-09-03:4532</id>
-    <updated>2021-09-02T23:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, &lt;a href="http://twitter.com/starbuxman"&gt;Josh Long (@starbuxman )&lt;/a&gt; breathlessly recaps some of the exciting news from the just-finished SpringOne 2021 event and then talks to Jackson and Woodstox creator &lt;a href="http://twitter.com/"&gt;Tatu Saloranta (@cowtowncoder)&lt;/a&gt;&lt;/p&gt;
-&lt;iframe title="SpringOne 2021 and Tatu Saloranta" allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=k8gh5-10ce9fe-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;btn-skin=7"&gt;&lt;/iframe&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
