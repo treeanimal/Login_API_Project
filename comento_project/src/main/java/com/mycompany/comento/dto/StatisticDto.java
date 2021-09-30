@@ -1,37 +1,26 @@
 package com.mycompany.comento.dto;
 
-public class StatisticDto {
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter @Setter
+public class StatisticDto {
+	
 	private int requestID;
 	private String requestCode;
 	private String userID;
 	private int createDate;
+
+	// 총 합계
+	private int totCnt;
+	// 로그인 수
+	private int loginNum;
+	// 월별 접속자
+	private String month;
+	// 일별 접속자
+	private String day;
 	
-	
-	public int getRequestID() {
-		return requestID;
-	}
-	public void setRequestID(int requestID) {
-		this.requestID = requestID;
-	}
-	public String getRequestCode() {
-		return requestCode;
-	}
-	public void setRequestCode(String requestCode) {
-		this.requestCode = requestCode;
-	}
-	public String getUserID() {
-		return userID;
-	}
-	public void setUserID(String userID) {
-		this.userID = userID;
-	}
-	public int getCreateDate() {
-		return createDate;
-	}
-	public void setCreateDate(int createDate) {
-		this.createDate = createDate;
-	}
+
 	
 	
 }

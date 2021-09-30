@@ -9,18 +9,30 @@
 		where left(ri.createDate, 2) = #{year};
 	</select>
 	
-	<!-- 월별 접속자 수 -->
-	<select id="selectMonthLogin" parameterType="string" resultType="hashMap">
-		select count(*) as totCnt
-		from statistic.requestinfo ri
-		where left(ri.createDate, 4) = #{yearMonth}
+	<!-- 해당연도 총 접속자 수 -->
+	<select id="selectYearTotLogin" parameterType="string" resultType="int">
+		select count(*) as totCnt from statistic.requestinfo ri where left(ri.createDate, 2) = #{year};
 	</select>
 	
+	<!-- 해당 월 총 접속자 수 -->
+	<select id="selectMonthTotLogin" parameterType="string" resultType="int">
+		select count(*) as totCnt from statistic.requestinfo ri where left(ri.createDate, 4) = #{yearMonth};
+	</select>
+	
+	<!-- 월별 접속자 수 -->
+	<select id="selectMonthLogin" parameterType="string" resultType="StatisticDto" >
+		select mid(ri.createDate, 3, 2) as month, count(*) as loginNum
+		from statistic.requestinfo ri 
+		where left(ri.createDate, 2) = #{year} group by mid(ri.createDate, 3, 2);
+	</select>
+
+	
 	<!-- 일자별 접속자 수 -->
-	<select id="selectDayLogin" parameterType="string" resultType="hashMap">
-		select count(*) as totCnt
+	<select id="selectDayLogin" parameterType="string" resultType="StatisticDto">
+		select mid(ri.createDate, 5, 2) as day, count(*) as loginNum
 		from statistic.requestinfo ri
-		where left(ri.createDate, 6) = #{yearMonthDay}
+		where left(ri.createDate, 4) = #{yearMonth}
+		group by mid(ri.createDate, 5, 2);
 	</select>
 	
 	<!-- 하루 평균 로그인수-->
@@ -40,9 +52,10 @@
 	
 	<!-- 해당연도 부서별, 월별 로그인 수 -->
 	<select id="selectDeptMonthLogin" parameterType="string" resultType="hashMap">
-		select count(*) as totCnt
+		select requestCode as dept, mid(ri.createDate, 3, 2) as month, count(*) as loginNum 
 		from statistic.requestinfo ri
-		where left(ri.createDate, 2) = #{year} and requestCode = #{requestCode}
+		where left(ri.createDate, 4) = #{yearMonth}
+		group by requestCode, mid(ri.createDate, 3, 2);
 	</select>
 	
 </mapper>
