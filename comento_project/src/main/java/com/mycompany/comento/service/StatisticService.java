@@ -16,4 +16,8 @@ public interface StatisticService {
 	public int selectMonthTotLogin(String yearMonth);
 	
 	public List<StatisticDto> selectDayLogin(String yearMonth);
+	
+//	---------- 일별 접속자 수 ---------------
+	public List<HashMap<String, String>> selectDistinctMonth(String year);
+	
 }

@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.mycompany.comento.controller.StatApiController.MonthDto;
 import com.mycompany.comento.dto.StatisticDto;
 import com.mycompany.comento.service.StatisticService;
 
@@ -35,6 +36,7 @@ public class StatApiController {
 		return service.yearloginNum(year);
 	}
 	
+	// 월별 로그인 수
 	@GetMapping("/statisticLogin/month/{year}")
 	public Result<List<MonthDto>> getMonthLogin(@PathVariable String year){
 		
@@ -54,7 +56,13 @@ public class StatApiController {
 		return new Result<>(totCnt, dto);
 	}
 	
+	@GetMapping("/test/{year}")
+	public String test(@PathVariable String year) {
+		service.selectDistinctMonth(year);
+		return "good";
+	}
 	
+	// 일별 로그인수
 	@GetMapping("/statisticLogin/day/{yearMonth}")
 	public Result<List<DayDto>> getDayLogin(@PathVariable String yearMonth){
 		

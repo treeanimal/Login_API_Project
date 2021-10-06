@@ -19,5 +19,10 @@ public interface StatisticMapper {
 	
 	public List<StatisticDto> selectDayLogin(String yearMonth);
 	
-
+//	----------- 일별 접속자 수
+//	중복을 제거한 로그인한 기록이 있는 해당 월을 나타낸다.
+	public List<HashMap<String, String>> selectDistinctMonth(String year);
+	
+//	해당 월의 하루 방문자 수
+	public List<HashMap<String, String>> selectDayLoginByMonth(String month);
 }
