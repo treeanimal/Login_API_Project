@@ -25,8 +25,7 @@
 	</select>
 
 	<!-- 월별 접속자 수 -->
-	<select id="selectMonthLogin" parameterType="string"
-		resultType="StatisticDto">
+	<select id="selectMonthLogin" parameterType="string" resultType="StatisticDto">
 		select mid(ri.createDate, 3, 2) as month,
 		count(*) as
 		loginNum
@@ -36,19 +35,8 @@
 	</select>
 
 	<!-- **************일자별 접속자수 ****************** -->
-	<!-- 일자별 접속자 수 -->
-	<select id="selectDayLogin" parameterType="string"
-		resultType="StatisticDto">
-		select mid(ri.createDate, 5, 2) as day, count(*) as
-		loginNum
-		from statistic.requestinfo ri
-		where left(ri.createDate, 4) =
-		#{yearMonth}
-		group by mid(ri.createDate, 5, 2);
-	</select>
 
-	<select id="selectDistinctMonth" parameterType="string"
-		resultType="hashMap">
+	<select id="selectDistinctMonth" parameterType="string" resultType="StatisticDto">
 		select distinct mid(ri.createDate, 3, 2) as month
 		from
 		statistic.requestinfo ri
@@ -56,8 +44,8 @@
 		by month asc;
 	</select>
 
-	<select id="selectDayLoginByMonth" parameterType="string" resultType="hashMap">
-		select mid(ri.createDate, 5, 2) as day, count(*)
+	<select id="selectDayLoginByMonth" parameterType="string" resultType="StatisticDto">
+		select mid(ri.createDate, 5, 2) as day, count(*) as loginNum
 		from statistic.requestinfo ri
 		where mid(ri.createDate, 3, 2) = #{month}
 		group by mid(ri.createDate, 5, 2);
@@ -67,9 +55,8 @@
 	<!-- **************************************************** -->
 
 	<!-- 하루 평균 로그인수 -->
-	<select id="selectAvgDayLogin" parameterType="string"
-		resultType="hashMap">
-		select count(*)/365 as totCnt
+	<select id="selectAvgDayLogin" parameterType="string" resultType="hashMap">
+		select count(*)/365 as loginNum
 		from statistic.requestinfo ri
 		where left(ri.createDate, 2) = #{year}
 	</select>

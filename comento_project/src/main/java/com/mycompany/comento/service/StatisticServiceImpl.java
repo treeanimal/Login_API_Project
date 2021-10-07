@@ -1,19 +1,13 @@
 package com.mycompany.comento.service;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map.Entry;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.mycompany.comento.controller.StatApiController;
 import com.mycompany.comento.dao.StatisticMapper;
 import com.mycompany.comento.dto.StatisticDto;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
 
 @Service
 public class StatisticServiceImpl implements StatisticService {
@@ -65,31 +59,24 @@ public class StatisticServiceImpl implements StatisticService {
 
 //	---------------- 일별 접속자 수 ---------------------
 	@Override
-	public List<HashMap<String, String>> selectDistinctMonth(String year) {
+	public List<StatisticDto> selectDistinctMonth(String year) {
+		return uMapper.selectDistinctMonth(year);
+	}
+
+	@Override
+	public List<StatisticDto> selectDayLoginByMonth(String month) {
+		return uMapper.selectDayLoginByMonth(month);
+	}
+
+//	하루 평균 로그인 수
+	@Override
+	public HashMap<String, Object> selectAvgDayLogin(String year) {
+		HashMap<String, Object> map = new HashMap<>();
 		
-		List<HashMap<String, String>> result = uMapper.selectDistinctMonth(year);
-		HashMap<String, Object> retVal = new HashMap<String, Object>();
-		
-		for(int i = 0; i < result.size(); i++) {
-			for(Entry<String, String> entry : result.get(i).entrySet()) {
-				String month = entry.getKey();
-				String value = entry.getValue();
-				retVal.put("month", month);
-//				retVal.put("data", value);
-				
-			}
-		}
-		return null;
+		map = uMapper.selectAvgDayLogin(year);
+		return map;
 	}
 	
-//	------------------------------------------------------
-	
-	@Data
-	@AllArgsConstructor
-	static class Result<T> {
-		private int totCnt;
-		private T data;
-	}
 
 
 }

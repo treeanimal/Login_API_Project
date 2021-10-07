@@ -18,7 +18,7 @@ public class StatisticDto {
 	// 월별 접속자
 	private String month;
 	// 일별 접속자
-	private String day;
+	private int day;
 	
 
 	

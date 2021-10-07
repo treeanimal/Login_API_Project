@@ -18,6 +18,11 @@ public interface StatisticService {
 	public List<StatisticDto> selectDayLogin(String yearMonth);
 	
 //	---------- 일별 접속자 수 ---------------
-	public List<HashMap<String, String>> selectDistinctMonth(String year);
+	public List<StatisticDto> selectDistinctMonth(String year);
+	
+	public List<StatisticDto> selectDayLoginByMonth(String month);
+
+//	---------- 하루 평균 로그인 수
+	public HashMap<String, Object> selectAvgDayLogin(String year);
 	
 }
