@@ -25,7 +25,7 @@
 	</select>
 
 	<!-- 월별 접속자 수 -->
-	<select id="selectMonthLogin" parameterType="string" resultType="StatisticDto">
+	<select id="selectMonthLogin" parameterType="string" resultType="com.mycompany.comento.dto.StatisticDto$MonthDto">
 		select mid(ri.createDate, 3, 2) as month,
 		count(*) as
 		loginNum
@@ -36,15 +36,14 @@
 
 	<!-- **************일자별 접속자수 ****************** -->
 
-	<select id="selectDistinctMonth" parameterType="string" resultType="StatisticDto">
+	<select id="selectDistinctMonth" parameterType="string" resultType="com.mycompany.comento.dto.StatisticDto$MonthDto">
 		select distinct mid(ri.createDate, 3, 2) as month
-		from
-		statistic.requestinfo ri
+		from statistic.requestinfo ri
 		where left(ri.createDate, 2) = #{year} order
 		by month asc;
 	</select>
 
-	<select id="selectDayLoginByMonth" parameterType="string" resultType="StatisticDto">
+	<select id="selectDayLoginByMonth" parameterType="string" resultType="com.mycompany.comento.dto.StatisticDto$DayDto">
 		select mid(ri.createDate, 5, 2) as day, count(*) as loginNum
 		from statistic.requestinfo ri
 		where mid(ri.createDate, 3, 2) = #{month}

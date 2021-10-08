@@ -1,5 +1,9 @@
 package com.mycompany.comento.dto;
 
+import java.util.List;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -20,6 +24,37 @@ public class StatisticDto {
 	// 일별 접속자
 	private int day;
 	
+	
+	@Data
+	@AllArgsConstructor
+	public static class Result<T> {
+		private int totCnt;
+		private int year;
+		private T data;
+	}
+	
+	// 월별 로그인 수 DTO
+	@Data
+	@AllArgsConstructor
+	public static class MonthDto {
+		private int month;
+		private int loginNum;
+	}
+
+	// ------- 일별 로그인 수 DTO --------
+	@Data
+	@AllArgsConstructor
+	public static class DayMonthDto {
+		private int month;
+		private List<DayDto> data;
+	}
+
+	@Data
+	@AllArgsConstructor
+	public static class DayDto {
+		private int day;
+		private int loginNum;
+	}
 
 	
 	

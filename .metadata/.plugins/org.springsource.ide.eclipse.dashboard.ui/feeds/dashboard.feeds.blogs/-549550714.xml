@@ -5,7 +5,20 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2021-10-06T07:00:00Z</updated>
+  <updated>2021-10-07T19:00:00Z</updated>
+  <entry>
+    <title>A Bootiful Podcast: Heiko Scherrer on OpenWMS, Spring, Spring Boot, Spring Data, workflow with Activiti and more</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/10/07/a-bootiful-podcast-heiko-scherrer-on-openwms-spring-spring-boot-spring-data-workflow-with-activiti-and-more" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-10-07:4564</id>
+    <updated>2021-10-07T19:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, &lt;a href="https://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks to OpenWMS founder &lt;a href="https://twitter.com/openwms"&gt;Heiko Scherrer (@openwms)&lt;/a&gt; about OpenWMS, Spring, Spring Boot, Spring Data, workflow with Activiti and more.&lt;/p&gt;
+&lt;p&gt;&lt;iframe title="Heiko Scherrer on OpenWMS, Spring, Spring Boot, Spring Data, workflow with Activiti and more  " allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=w3vqw-10fbf60-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;btn-skin=7"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring Tips: Spring GraphQL</title>
     <link rel="alternate" href="https://spring.io/blog/2021/10/06/spring-tips-spring-graphql" />
@@ -928,21 +941,6 @@ Let me know if you would like me to cover specific topics.&lt;/p&gt;
 &lt;p&gt;Detailed changes can be found here: &lt;a href="https://github.com/spring-projects/sts4/wiki/Changelog#2021-09-15-4120-release-incl-language-servers-version-1280"&gt;https://github.com/spring-projects/sts4/wiki/Changelog#2021-09-15-4120-release-incl-language-servers-version-1280&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Spring Tools 4.12.1 is scheduled to be released in late October 2021.&lt;/p&gt;
 &lt;p&gt;Enjoy!&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Framework 5.3.10 and 5.2.17 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/09/15/spring-framework-5-3-10-and-5-2-17-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>St?phane Nicoll</name>
-    </author>
-    <id>tag:spring.io,2021-09-15:4545</id>
-    <updated>2021-09-15T08:44:00Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Framework &lt;code&gt;5.3.10&lt;/code&gt; and &lt;code&gt;5.2.17&lt;/code&gt; are available now.&lt;/p&gt;
-&lt;p&gt;Spring Framework &lt;code&gt;5.3.10&lt;/code&gt; includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.3.10"&gt;45 fixes and improvements&lt;/a&gt;. Spring Framework &lt;code&gt;5.2.17&lt;/code&gt; includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.2.17.RELEASE"&gt;13 selected fixes and improvements&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Stay tuned for follow-up Spring Boot releases next week.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/5.3.10/reference/html/"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

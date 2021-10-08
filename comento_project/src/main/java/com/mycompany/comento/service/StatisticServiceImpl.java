@@ -1,5 +1,6 @@
 package com.mycompany.comento.service;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.mycompany.comento.dao.StatisticMapper;
 import com.mycompany.comento.dto.StatisticDto;
+import com.mycompany.comento.dto.StatisticDto.Result;
 
 @Service
 public class StatisticServiceImpl implements StatisticService {
@@ -34,7 +36,7 @@ public class StatisticServiceImpl implements StatisticService {
 	}
 
 	@Override
-	public List<StatisticDto> selectMonthLogin(String year) {
+	public List<StatisticDto.MonthDto> selectMonthLogin(String year) {
 
 		return uMapper.selectMonthLogin(year);
 	}
@@ -57,26 +59,64 @@ public class StatisticServiceImpl implements StatisticService {
 		return uMapper.selectMonthTotLogin(yearMonth);
 	}
 
-//	---------------- 일별 접속자 수 ---------------------
-	@Override
-	public List<StatisticDto> selectDistinctMonth(String year) {
-		return uMapper.selectDistinctMonth(year);
-	}
-
-	@Override
-	public List<StatisticDto> selectDayLoginByMonth(String month) {
-		return uMapper.selectDayLoginByMonth(month);
-	}
-
 //	하루 평균 로그인 수
 	@Override
 	public HashMap<String, Object> selectAvgDayLogin(String year) {
 		HashMap<String, Object> map = new HashMap<>();
-		
+
 		map = uMapper.selectAvgDayLogin(year);
 		return map;
 	}
-	
 
+//	--------------- new ------------------------
+
+	// 월별 로그인 수
+	@Override
+	public Result getMonthLogin(String year) {
+
+		// 총 합계
+		int totCnt = uMapper.selectYearTotLogin(year);
+		System.out.println(totCnt);
+		
+		year = year.substring(2, year.length());
+
+		// 월별 로그인 수
+		List<StatisticDto.MonthDto> findStatic = uMapper.selectMonthLogin(year);
+
+		List<StatisticDto.MonthDto> dto = new ArrayList<>();
+		for (StatisticDto.MonthDto array : findStatic) {
+			dto.add(new StatisticDto.MonthDto(array.getMonth(), array.getLoginNum()));
+			totCnt += array.getLoginNum();
+		}
+
+		return new StatisticDto.Result<>(totCnt, Integer.parseInt(year), dto);
+	}
+
+	// 일별 로그인 수
+	@Override
+	public Result getDayLogin(String year) {
+
+		// 
+		List<StatisticDto.MonthDto> findMonth = uMapper.selectDistinctMonth(year);
+
+		List<StatisticDto.DayMonthDto> dto = new ArrayList<>();
+		for (StatisticDto.MonthDto array : findMonth) {
+			dto.add(new StatisticDto.DayMonthDto(array.getMonth(), find_day(array.getMonth())));
+		}
+
+		return new Result<>(0, Integer.parseInt(year), dto);
+
+	}
+	
+	private List<StatisticDto.DayDto> find_day(int month) {
+		List<StatisticDto.DayDto> findDay = uMapper.selectDayLoginByMonth(month);
+
+		List<StatisticDto.DayDto> dto = new ArrayList<>();
+		for (StatisticDto.DayDto array : findDay) {
+			dto.add(new StatisticDto.DayDto(array.getDay(), array.getLoginNum()));
+		}
+
+		return dto;
+	}
 
 }
