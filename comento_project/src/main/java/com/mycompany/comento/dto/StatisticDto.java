@@ -1,34 +1,21 @@
 package com.mycompany.comento.dto;
 
+import java.util.HashMap;
 import java.util.List;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter @Setter
 public class StatisticDto {
 	
-	private int requestID;
-	private String requestCode;
-	private String userID;
-	private int createDate;
-
-	// 총 합계
-	private int totCnt;
-	// 로그인 수
-	private int loginNum;
-	// 월별 접속자
-	private String month;
-	// 일별 접속자
-	private int day;
-	
-	
 	@Data
 	@AllArgsConstructor
 	public static class Result<T> {
-		private int totCnt;
+		private String is_success;
 		private int year;
 		private T data;
 	}
@@ -41,21 +28,47 @@ public class StatisticDto {
 		private int loginNum;
 	}
 
-	// ------- 일별 로그인 수 DTO --------
+	// 일별 로그인 수 DTO
 	@Data
 	@AllArgsConstructor
-	public static class DayMonthDto {
+	@NoArgsConstructor
+	public static class DistinctMonthDto {
 		private int month;
 		private List<DayDto> data;
 	}
 
 	@Data
 	@AllArgsConstructor
-	public static class DayDto {
+	@NoArgsConstructor
+	public static class DayMonthDto {
+		private int month;
+		private int day;
+		private int loginNum;
+	}
+	
+	@Data
+	@AllArgsConstructor
+	public static class DayDto{
 		private int day;
 		private int loginNum;
 	}
 
+	// 부서별, 월별 로그인 수 DTO
+	@Data
+	@AllArgsConstructor
+	@NoArgsConstructor
+	public static class DeptMonthDto{
+		private String dept;
+		private int month;
+		private int loginNum;
+	}
+	
+	@Data
+	@AllArgsConstructor
+	public static class DeptDto{
+		private String dept;
+		private List<MonthDto> data;
+	}
 	
 	
 }
