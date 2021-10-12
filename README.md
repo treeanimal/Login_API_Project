@@ -1,3 +1,4 @@
+
 # comento-project
 ## 일시: 2021/09/02 - 2021/09/07 - 1주차
 
@@ -56,11 +57,12 @@ https://velog.io/@sloth/HTTP-%ED%86%B5%EC%8B%A0
 2) HTTP 메시지 및 메서드
 https://velog.io/@sloth/HTTP-%EB%A9%94%EC%8B%9C%EC%A7%80-%EB%B0%8F-%EB%A9%94%EC%84%9C%EB%93%9C
 ---
-## 일시: 2021/09/15 - 2021/02/22 - 3주차
+## 일시: 2021/09/15 - 2021/09/22 - 3주차
 
 ### 주간보고
 
 1. 품질데이터 관리 운영
+	+  스프링에서 스플이부트로 전환
     + 통계 API 구축
         + API구축을 위한 스프링부트 세팅 및 SQL작성
 
@@ -72,61 +74,91 @@ https://velog.io/@sloth/HTTP-%EB%A9%94%EC%8B%9C%EC%A7%80-%EB%B0%8F-%EB%A9%94%EC%
 | IDE | Eclipse |
 | JDK | 1.8 |
 | DB | MySQL 8.0.2 |
-| Build Tool | Maven |
+
+* 스프링에서 스프링 부트로 전환하며 생긴 차이점
+	1. 스프링 부트는 Embed Tomcat을 사용하기 때문에 따로 톰캣을 설치하거나 버전을 관리했어야 하는 수고로움을 덜었다.
+	2. Spring Boot Starter를 통해서 Dependency가 자동으로 관리가 되기 때문에 버전관리에 어려움을 덜었다.
+	3. jar 파일을 이용해 손쉽게 배포가 가능하다.
+
+3. SW활용 현황 통계 API구축을 위한 SQL 작성
 ```java
 	<select id="selectYearLogin" parameterType="string" resultType="hashMap">
 		select count(*) as totCnt
 		from statistic.requestinfo ri
 		where left(ri.createDate, 2) = #{year};
 	</select>
-	
-	<!-- 해당연도 총 접속자 수 -->
-	<select id="selectYearTotLogin" parameterType="string" resultType="int">
-		select count(*) as totCnt from statistic.requestinfo ri where left(ri.createDate, 2) = #{year};
-	</select>
-	
-	<!-- 해당 월 총 접속자 수 -->
-	<select id="selectMonthTotLogin" parameterType="string" resultType="int">
-		select count(*) as totCnt from statistic.requestinfo ri where left(ri.createDate, 4) = #{yearMonth};
-	</select>
-	
+
 	<!-- 월별 접속자 수 -->
-	<select id="selectMonthLogin" parameterType="string" resultType="StatisticDto" >
-		select mid(ri.createDate, 3, 2) as month, count(*) as loginNum
-		from statistic.requestinfo ri 
-		where left(ri.createDate, 2) = #{year} group by mid(ri.createDate, 3, 2);
+	<select id="selectMonthLogin" parameterType="string"
+		resultType="com.mycompany.comento.dto.StatisticDto$MonthDto">
+		select mid(ri.createDate, 3, 2) as month, count(*) as
+		loginNum
+		from statistic.requestinfo ri
+		where left(ri.createDate, 2) =
+		#{year} group by mid(ri.createDate, 3, 2);
 	</select>
 
-	
-	<!-- 일자별 접속자 수 -->
-	<select id="selectDayLogin" parameterType="string" resultType="StatisticDto">
-		select mid(ri.createDate, 5, 2) as day, count(*) as loginNum
-		from statistic.requestinfo ri
-		where left(ri.createDate, 4) = #{yearMonth}
-		group by mid(ri.createDate, 5, 2);
+	<!-- 일별 접속자 수 -->
+	<select id="selectDistinctMonth" parameterType="string"
+		resultType="com.mycompany.comento.dto.StatisticDto$DistinctMonthDto">
+		select distinct mid(ri.createDate, 3, 2) as month
+		from
+		statistic.requestinfo ri
+		where left(ri.createDate, 2) = #{year} order
+		by month asc;
 	</select>
-	
-	<!-- 하루 평균 로그인수-->
-	<select id="selectAvgDayLogin" parameterType="string" resultType="hashMap">
-		select count(*)/365 as totCnt
-		from statistic.requestinfo ri
+
+	<select id="selectDayLogin" parameterType="string"
+		resultType="com.mycompany.comento.dto.StatisticDto$DayMonthDto">
+		select mid(ri.createDate, 3, 2) as month,
+		mid(ri.createDate, 5, 2) as day, count(*) as loginNum
+		from
+		statistic.requestinfo ri
+		where left(ri.createDate, 2) = #{year}
+		group by
+		mid(ri.createDate, 3, 2), mid(ri.createDate, 5, 2);
+	</select>
+
+	<!-- 하루 평균 로그인수 -->
+	<select id="selectAvgDayLogin" parameterType="string"
+		resultType="hashMap">
+		select count(*)/365 as loginNum
+		from statistic.requestinfo
+		ri
 		where left(ri.createDate, 2) = #{year}
 	</select>
-	
+
 	<!-- 휴일을 제외한 해당연도 로그인 수 -->
-	<!-- 현재는 휴일을 포함 -->
-	<select id="selectExceptHolidayLogin" parameterType="string" resultType="hashMap">
-		select count(*) as totCnt
+	<select id="selectExceptHolidayLogin" parameterType="hashMap" resultType="hashMap">
+		select count(*) as loginNum
 		from statistic.requestinfo ri
-		where left(ri.createDate, 2) = #{year}
+		where left(ri.createDate, 2) = #{year} and mid(ri.createDate, 3, 4) NOT IN
+		<foreach collection="holiday" item="arr" open="(" close=")" separator=",">
+			#{arr}
+		</foreach> 
+		;
+	</select>
+
+	<!-- 해당연도 부서별, 월별 로그인 수 -->
+	<select id="selectDistinctDept" resultType="hashMap">
+		select distinct requestCode as dept from statistic.requestinfo ri;
 	</select>
 	
-	<!-- 해당연도 부서별, 월별 로그인 수 -->
-	<select id="selectDeptMonthLogin" parameterType="string" resultType="hashMap">
+	<select id="selectDeptMonthLogin" parameterType="string" resultType="com.mycompany.comento.dto.StatisticDto$DeptMonthDto">
 		select requestCode as dept, mid(ri.createDate, 3, 2) as month, count(*) as loginNum 
 		from statistic.requestinfo ri
-		where left(ri.createDate, 4) = #{yearMonth}
+		where left(ri.createDate, 2) = #{year}
 		group by requestCode, mid(ri.createDate, 3, 2);
 	</select>
 ```
-* 휴일을 제외한 해당연도 로그인 수는 Open Api를 이용할 예정
+
+## 일시: 2021/09/23 - 2021/09/30 - 4주차
+
+### 주간보고
+
+1. 품질데이터 관리 운영
+    + 통계 API 구축
+        + 작성한 SQL을 토대로 API작성 완료
+
+2. API 가이드 문서 최신화 완료
+3. Open API를 활용하여 API 작성 완료
