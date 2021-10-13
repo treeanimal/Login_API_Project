@@ -1,5 +1,5 @@
 
-# comento-project
+# Login API Project
 ## 일시: 2021/09/02 - 2021/09/07 - 1주차
 
 ### 주간보고
